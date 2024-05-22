@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'org.example.TranspositionClass',
+        )
+    }
+}
